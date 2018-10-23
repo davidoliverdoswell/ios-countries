@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Country {
+struct Country: Codable, Equatable {
     var name: String
     var region: String
     var capital: String
