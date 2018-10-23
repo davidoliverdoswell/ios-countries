@@ -15,8 +15,8 @@ class CountriesDetailViewController: UIViewController {
     @IBOutlet weak var population: UILabel!
     @IBOutlet weak var currencies: UILabel!
     @IBOutlet weak var languages: UILabel!
-    @IBOutlet weak var flag: UILabel!
-
+    @IBOutlet weak var flag: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,7 +32,7 @@ class CountriesDetailViewController: UIViewController {
         population.text = country.population
         currencies.text = country.currencies
         languages.text = country.languages
-        flag.text = country.flag
+        flag.image = UIImage(data: country.flag)
     }
     
     var country: Country? {

@@ -15,5 +15,18 @@ struct Country: Codable, Equatable {
     var population: String
     var currencies: String
     var languages: String
-    var flag: String
+    var flag: Data
 }
+
+struct SearchResult: Codable {
+    var name: String
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+    }
+}
+
+struct SearchResults: Codable {
+    let results: [SearchResult]
+}
+

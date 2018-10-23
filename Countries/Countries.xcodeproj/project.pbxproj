@@ -15,6 +15,7 @@
 		49BF8E69217FB6A800172F3B /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF8E68217FB6A800172F3B /* CountriesTableViewController.swift */; };
 		49BF8E6B217FB6EB00172F3B /* CountriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF8E6A217FB6EB00172F3B /* CountriesController.swift */; };
 		49BF8E6D217FB8C100172F3B /* CountriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF8E6C217FB8C100172F3B /* CountriesDetailViewController.swift */; };
+		49D9F8A7217FD3C600816F35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F8A6217FD3C600816F35 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		49BF8E68217FB6A800172F3B /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		49BF8E6A217FB6EB00172F3B /* CountriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesController.swift; sourceTree = "<group>"; };
 		49BF8E6C217FB8C100172F3B /* CountriesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesDetailViewController.swift; sourceTree = "<group>"; };
+		49D9F8A6217FD3C600816F35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				49BF8E6A217FB6EB00172F3B /* CountriesController.swift */,
 				49BF8E68217FB6A800172F3B /* CountriesTableViewController.swift */,
 				49BF8E6C217FB8C100172F3B /* CountriesDetailViewController.swift */,
+				49D9F8A6217FD3C600816F35 /* Extensions.swift */,
 				49BF8E5B217FB41B00172F3B /* Assets.xcassets */,
 				49BF8E5D217FB41B00172F3B /* LaunchScreen.storyboard */,
 				49BF8E60217FB41B00172F3B /* Info.plist */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BF8E6B217FB6EB00172F3B /* CountriesController.swift in Sources */,
+				49D9F8A7217FD3C600816F35 /* Extensions.swift in Sources */,
 				49BF8E6D217FB8C100172F3B /* CountriesDetailViewController.swift in Sources */,
 				49BF8E67217FB4F400172F3B /* Country.swift in Sources */,
 				49BF8E69217FB6A800172F3B /* CountriesTableViewController.swift in Sources */,

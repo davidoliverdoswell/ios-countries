@@ -8,12 +8,32 @@
 
 import UIKit
 
-class CountriesTableViewController: UITableViewController {
+class CountriesTableViewController: UITableViewController, UISearchBarDelegate {
     
     var countriesController: CountriesController?
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        searchBar.placeholder = String.searchBarPlaceHolderText
+        searchBar.delegate = self
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchTerm = searchBar.text, !searchTerm.isEmpty else { return }
+        
+        countriesController?.performSearch(with: searchTerm, completion: { (error) in
+            if let error = error {
+                NSLog("\(error)")
+            }
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        })
+        
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return countriesController?.countries.count ?? 0
