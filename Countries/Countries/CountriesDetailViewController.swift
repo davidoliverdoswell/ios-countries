@@ -12,7 +12,21 @@ class CountriesDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateViews()
 
+    }
+    
+    private func updateViews() {
+        guard let country = country, isViewLoaded else { return }
+        
+        title = country.name
+    }
+    
+    var country: Country? {
+        didSet {
+            updateViews()
+        }
     }
 
 }
