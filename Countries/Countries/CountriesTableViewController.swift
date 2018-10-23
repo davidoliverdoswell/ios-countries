@@ -27,7 +27,7 @@ class CountriesTableViewController: UITableViewController, UISearchBarDelegate {
         countriesController?.performSearch(with: searchTerm, completion: { (error) in
             if let error = error {
                 NSLog("\(error)")
-            }
+            } 
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -39,7 +39,6 @@ class CountriesTableViewController: UITableViewController, UISearchBarDelegate {
         return countriesController?.countries.count ?? 0
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         

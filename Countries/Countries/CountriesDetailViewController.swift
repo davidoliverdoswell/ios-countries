@@ -21,6 +21,9 @@ class CountriesDetailViewController: UIViewController {
         super.viewDidLoad()
         
         updateViews()
+        
+        navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+        navigationItem.leftItemsSupplementBackButton = true
     }
     
     private func updateViews() {

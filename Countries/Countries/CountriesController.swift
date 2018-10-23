@@ -8,7 +8,7 @@
 
 import Foundation
 
-private let baseURL = URL(string: "https://restcountries.eu/rest/v2/name/")!
+private let baseURL = URL(string: "https://restcountries.eu/rest/v2/all?fields=name;region;capital;population;currencies;languages;flag")!
 
 class CountriesController {
     
@@ -16,7 +16,6 @@ class CountriesController {
 
     var searchResults: [SearchResult] = []
 
-    
     enum RequestMethod: String {
         case get
     }
